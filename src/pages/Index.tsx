@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import {
   Music2, Headphones, Cloud, Instagram, Youtube, Facebook,
-  Mail, Phone, MapPin, Calendar, Mic2, Disc3, Heart, Sparkles
+  Mail, Phone, MapPin, Calendar, Mic2, Disc3, Heart, Sparkles, Play
 } from "lucide-react";
 import heroImg from "@/assets/ally-hero.jpg";
 import live1 from "@/assets/ally-live-1.jpg";
@@ -53,6 +53,25 @@ const Hero = () => (
           Emotional truth at the heart of every note. Soulful vocals weaving stories
           of love, vulnerability and self-discovery — in French, Creole and English.
         </p>
+
+        <a
+          href="https://youtu.be/pBRdhmNkM3g"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-4 mb-8 p-3 pr-6 rounded-full border border-gold/40 bg-card/50 backdrop-blur hover:bg-card/80 hover:border-gold transition-all max-w-full"
+        >
+          <span className="relative h-11 w-11 shrink-0 grid place-items-center rounded-full bg-gold text-primary-foreground">
+            <Play className="h-5 w-5 fill-current ml-0.5" />
+            <span className="absolute inset-0 rounded-full bg-gold animate-ping opacity-30" />
+          </span>
+          <span className="min-w-0">
+            <span className="block text-[10px] uppercase tracking-[0.25em] text-gold">New Single · Out now</span>
+            <span className="block font-display text-lg md:text-xl truncate">
+              "San ou" <span className="text-muted-foreground italic text-sm">— Ally Oriental × ÄSHH</span>
+            </span>
+          </span>
+        </a>
+
         <div className="flex flex-wrap gap-3">
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6">
             <a href="https://open.spotify.com/search/Ally%20Oriental" target="_blank" rel="noopener noreferrer">
